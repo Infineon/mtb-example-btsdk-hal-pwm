@@ -58,7 +58,9 @@ SUPPORTED_TARGETS = \
   CYW989820EVB-01 \
   CYW920706WCDEVAL \
   CYBT-343026-EVAL \
-  CYW920735Q60EVB-01
+  CYBT-343052-EVAL \
+  CYW920735Q60EVB-01 \
+  CYW920835M2EVB-01
 
 #
 # Advanced Configuration
@@ -147,6 +149,6 @@ endif
 
 -include internal.mk
 ifeq ($(filter $(TARGET),$(SUPPORTED_TARGETS)),)
-$(error TARGET $(TARGET) not supported for this code example)
+$(error TARGET $(TARGET) not supported for this application. Edit SUPPORTED_TARGETS in the code example makefile to add new BSPs)
 endif
 include $(CY_TOOLS_DIR)/make/start.mk
