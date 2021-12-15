@@ -221,16 +221,11 @@ void pwm_sample_app_init(void)
                         0);
     pwm_running = WICED_TRUE;
 
-    if(WICED_SUCCESS == wiced_init_timer(&seconds_timer,
-                                          &seconds_app_timer_cb,
-                                          0,
-                                          WICED_MILLI_SECONDS_PERIODIC_TIMER ))
-    {
-        if(WICED_SUCCESS != wiced_start_timer(&seconds_timer, 100 ))
-        {
-            WICED_BT_TRACE("Seconds Timer Error\n\r");
-        }
-    }
+    wiced_init_timer(&seconds_timer,
+                     &seconds_app_timer_cb,
+                     0,
+                     WICED_MILLI_SECONDS_PERIODIC_TIMER );
+    wiced_start_timer(&seconds_timer, 100 );
 }
 
 /*
