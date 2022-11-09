@@ -86,7 +86,7 @@
  ******************************************************************************/
 static wiced_bool_t pwm_running = WICED_FALSE;
 
-static wiced_timer_t seconds_timer;               /* wiced bt app seconds timer */
+static wiced_timer_t seconds_timer;               /* app seconds timer */
 /******************************************************************************
  *                          Function Declarations
  ******************************************************************************/
