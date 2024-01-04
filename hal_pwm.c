@@ -1,5 +1,5 @@
 /*
- * Copyright 2016-2022, Cypress Semiconductor Corporation (an Infineon company) or
+ * Copyright 2016-2023, Cypress Semiconductor Corporation (an Infineon company) or
  * an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
  *
  * This software, including source code, documentation and related
@@ -65,7 +65,7 @@
 #include "wiced_bt_app_hal_common.h"
 #include "wiced_bt_app_common.h"
 #else
-#include "GeneratedSource/cycfg_pins.h"
+#include "cycfg_pins.h"
 #endif
 
 /******************************************************************************
